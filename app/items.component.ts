@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { Router }            from '@angular/router';
 
-import { Item }                from './item';
-import { ItemService }         from './item.service';
+import { Item } from './item';
+import { ItemService } from './item.service';
 
 @Component({
-    selector: "items",
+    selector: "ns-items",
     templateUrl: "items.component.html",
 })
 export class ItemsComponent implements OnInit {
-  items: Item[];
+    items: Item[];
 
-  constructor(
-    private itemService: ItemService,
-    private router: Router
+    constructor(
+        private itemService: ItemService
     ) { }
- 
-  ngOnInit(): void {
-    this.items = this.itemService.getItems();
-  }
-    
+
+    ngOnInit(): void {
+        this.items = this.itemService.getItems();
+    }
 }

@@ -20,8 +20,8 @@ import { ItemDetailComponent } from "./item-detail.component";
         ItemsComponent,
         ItemDetailComponent
     ],
-    providers: [ 
-        ItemService 
+    providers: [
+        ItemService
     ],
     schemas: [
         NO_ERRORS_SCHEMA
